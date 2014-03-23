@@ -2,6 +2,9 @@ body {
   background: #FEF9F0;
  }
 
+.top-bar .name h1 a {
+  font-family: 'Fredoka One', cursive;
+}
 .top-bar {
   background: #94C7C8;
  }
@@ -22,3 +25,16 @@ body {
  .top-bar-section li:not(.has-form) a:not(.button) {
   background: #94C7C8;
  }
+
+ #drawingBoard {
+  width: 400px;
+  height: 550px;
+ }
+
+ textarea {
+  height: 300px;
+}
+
+.textbox {
+  height: auto;
+}

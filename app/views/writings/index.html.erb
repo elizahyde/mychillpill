@@ -1,0 +1,12 @@
+<h1>Writings#index</h1>
+<p>A prompt will show up here</p>
+
+<%= form_for(@writing) do |f| %>
+  <div>
+    <%= f.text_area :content, :cols => "30", :rows => "30" %>
+  </div>
+  <div>
+    <%= f.submit "Save to Account", class: 'button' %>
+  </div>
+<% end %>
+
