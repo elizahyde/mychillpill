@@ -12,7 +12,6 @@
 //
 //= require jquery.min
 //= require jquery_ujs
-//= require turbolinks
 //= require foundation.min
 //= require drawingboard.min
 //= require_tree .

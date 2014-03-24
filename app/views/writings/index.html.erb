@@ -1,9 +1,12 @@
-<h3><%= @prompts.sample.description %></h3>
+<% question = @prompts.sample.description %>
+
+<h3><%= question %></h3>
 
 <%= form_for(@writing) do |f| %>
   <div>
     <%= f.text_area :content, :cols => "30", :rows => "30" %>
   </div>
+    <%= f.hidden_field :question, :value => question %>
   <div>
     <a href ="/writings" class="button">New Prompt</a>
     <%= f.submit "Save to Account", class: 'button' %>
