@@ -1,11 +1,13 @@
+<!-- Puts the randomly displays prompt in a variable -->
 <% question = @prompts.sample.description %>
-
+<!-- displays prompt -->
 <h3><%= question %></h3>
 
 <%= form_for(@writing) do |f| %>
   <div>
     <%= f.text_area :content, :cols => "30", :rows => "30" %>
   </div>
+  <!-- places question in hidden field in writing table -->
     <%= f.hidden_field :question, :value => question %>
   <div>
     <a href ="/writings" class="button">New Prompt</a>

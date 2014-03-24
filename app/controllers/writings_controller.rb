@@ -6,11 +6,9 @@ class WritingsController < ApplicationController
 
   def create
     @writing = Writing.new(writing_params)
-    # binding.pry
 
     respond_to do |format|
       if @writing.save
-        # binding.pry
         @writings = Writing.all
 
         format.html { redirect_to(:writings, :notice => 'Writing was successfully Saved.') }
@@ -32,6 +30,7 @@ class WritingsController < ApplicationController
   end
 
   def writing_params
+    # This allows content and question to be saved to writing (rails 4 change)
     params.require(:writing).permit(:content, :question)
   end
 end

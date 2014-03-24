@@ -3,6 +3,7 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $ ->
+  # Create drawing board
   myBoard = new DrawingBoard.Board('drawingBoard',
     errorMessage: "I'm sorry, your browser doesn't support this tool"
   )
