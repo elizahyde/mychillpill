@@ -29,7 +29,7 @@ prompt_list = [
   [ "writing","Write about the funniest thing that ever happened to you."],
   [ "writing","What would you pack in your suitcase if you could not go home again?"],
   [ "writing","If you had three wishes, what would they be?"],
-  [ "writing","What is something special and/or different about you?  Why do you think it is special or different?"],
+  [ "writing","What is something special and/or different about you?"],
   [ "writing","Write about some of the things that you worry about."],
   [ "writing","Describe your best personality trait."],
   [ "writing","If you had a chance to live anywhere you could, where would it be and why?"],

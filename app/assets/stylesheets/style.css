@@ -60,30 +60,30 @@ h1,h2,h3,h4, button, .button {
 
  @media only screen and (max-width: 942px) {
 
-     /* Makes the responsive menu fit in the navigation container and change its background to black */
-     .top-bar ul {
-        background: #94C7C8;
-     }
+   /* Makes the responsive menu fit in the navigation container and change its background to black */
+   .top-bar ul {
+      background: #94C7C8;
+   }
 
-     /* Change non active menu item color to black */
-     .top-bar-section ul li > a {
-        background: #94C7C8;
-     }
+   /* Change non active menu item color to black */
+   .top-bar-section ul li > a {
+      background: #94C7C8;
+   }
 
-     /* Gives the dropdown ul a black fill */
-     .top-bar-section ul {
-        background: #94C7C8;
-     }
+   /* Gives the dropdown ul a black fill */
+   .top-bar-section ul {
+      background: #94C7C8;
+   }
 
-     /* Give the BACK button after going in a submenu the appropriate filling */
-     .top-bar-section .dropdown li.title h5 a {
-        background: #94C7C8;
-     }
+   /* Give the BACK button after going in a submenu the appropriate filling */
+   .top-bar-section .dropdown li.title h5 a {
+      background: #94C7C8;
+   }
 
-     /* This fixes the position and the color of the dropdown arrow */
-     .top-bar-section .has-dropdown > a:after {
-        background: #94C7C8;
-     }
+   /* This fixes the position and the color of the dropdown arrow */
+   .top-bar-section .has-dropdown > a:after {
+      background: #94C7C8;
+   }
 
  } /* end media query */
 
