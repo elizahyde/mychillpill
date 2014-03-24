@@ -3,7 +3,6 @@
 <head>
   <title>MyChillPill</title>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
-
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
   <link href='http://fonts.googleapis.com/css?family=Fredoka+One|Karla:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -19,8 +18,28 @@
   <section class="top-bar-section">
     <!-- Right Nav Section -->
     <ul class="right">
-      <li class="has-dropdown">
-        <li><a href="#">Logout</a></li>
+      <% if user_signed_in? %>
+            <li> <%=link_to current_user.first_name, edit_user_registration_path%> </li>
+            <li id="logout"> <%= link_to "Logout", destroy_user_session_path, method: :delete %> </li>
+          <% else %>
+            <li><%= link_to "Sign Up", new_user_registration_path %></li><br><br>
+            <li>
+            <div class="nav navbar-text">
+              <%= form_for :user, url: "/users/sign_in", method: :post, html: {class: "form-inline", role: "form"} do |f| %>
+              <div class="row">
+                <div class="large-6 columns">
+                  <%= f.email_field :email, placeholder: "email", :autofocus => true, class: "form-control" %>
+                </div>
+                <div class="large-6 columns">
+                <%= f.password_field :password, placeholder: "password", class: "form-control"%>
+                </div>
+                </div>
+                <%= f.submit "Login", class: "button" %>
+                <br><br>
+              <% end %>
+            </li>
+            </div>
+          <% end %>
         </ul>
       </li>
     </ul>
