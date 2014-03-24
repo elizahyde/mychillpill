@@ -1,4 +1,5 @@
 Mychillpill::Application.routes.draw do
+  devise_for :users
   get '/writings', to: 'writings#index'
   get '/drawings', to: 'drawings#index'
   # The priority is based upon order of creation: first created -> highest priority.
