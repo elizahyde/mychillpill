@@ -1,28 +1,23 @@
-== README
+== MyChillPill
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+MyChillPill is a mental health focused app. It uses art and writing to help users during stressful times or just to escape the everyday.
 
-Things you may want to cover:
+This is my final project for General Assembly's Web Development Immersive Program.
 
-* Ruby version
+Things it uses:
 
-* System dependencies
+* Rails 4.0.4
 
-* Configuration
+* Ruby 2.0.0p451
 
-* Database creation
+* PostgreSQL
 
-* Database initialization
+* CoffeeScript
 
-* How to run the test suite
+* Jquery
 
-* Services (job queues, cache servers, search engines, etc.)
+* Drawingboard.js
 
-* Deployment instructions
+* Zurb Foundation
 
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* HTML5 - Especially Canvas
