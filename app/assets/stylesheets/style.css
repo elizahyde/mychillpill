@@ -1,6 +1,11 @@
 body {
   background: #FEF9F0;
+  font-family: 'Karla', sans-serif;
  }
+
+h1,h2,h3,h4, button, .button {
+  font-family: 'Karla', sans-serif;
+}
 
 .top-bar .name h1 a {
   font-family: 'Fredoka One', cursive;
@@ -14,15 +19,37 @@ body {
  }
 
  .top-bar-section li:hover a {
-     background: #94C7C8;
+   background: #ADD8C7;
+   font-family: 'Karla', sans-serif;
  }
 
  .top-bar-section ul li > a {
   background: #94C7C8;
+  font-family: 'Karla', sans-serif;
+ }
 
+ .top-bar-section ul li.active > a {
+  background: #ADD8C7;
  }
 
  .top-bar-section li:not(.has-form) a:not(.button) {
+  background: #94C7C8;
+ }
+
+ .top-bar-section li:not(.has-form) a:not(.button):hover {
+  background: #ADD8C7;
+ }
+
+ .top-bar-section ul.dropdown li a:hover:not(.button) {
+  background: #ADD8C7;
+ }
+
+ /** IMPORTANT fill for the ul dropdown container **/
+ .top-bar-section ul.dropdown {
+  background: #ADD8C7;
+ }
+
+ .top-bar-section .has-dropdown > a:after {
   background: #94C7C8;
  }
 
@@ -30,6 +57,35 @@ body {
   width: 400px;
   height: 550px;
  }
+
+ @media only screen and (max-width: 942px) {
+
+     /* Makes the responsive menu fit in the navigation container and change its background to black */
+     .top-bar ul {
+        background: #94C7C8;
+     }
+
+     /* Change non active menu item color to black */
+     .top-bar-section ul li > a {
+        background: #94C7C8;
+     }
+
+     /* Gives the dropdown ul a black fill */
+     .top-bar-section ul {
+        background: #94C7C8;
+     }
+
+     /* Give the BACK button after going in a submenu the appropriate filling */
+     .top-bar-section .dropdown li.title h5 a {
+        background: #94C7C8;
+     }
+
+     /* This fixes the position and the color of the dropdown arrow */
+     .top-bar-section .has-dropdown > a:after {
+        background: #94C7C8;
+     }
+
+ } /* end media query */
 
  textarea {
   height: 300px;

@@ -4,7 +4,6 @@
 
 $ ->
   myBoard = new DrawingBoard.Board('drawingBoard',
-    controlsPosition: "bottom center"
     errorMessage: "I'm sorry, your browser doesn't support this tool"
   )
   myBoard.addControl('Download')
