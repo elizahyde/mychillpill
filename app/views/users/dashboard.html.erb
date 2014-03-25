@@ -1,7 +1,43 @@
-<h1>Write</h1>
-<% @user.writings.each do |writing| %>
-<div>
-  <h3><%= writing.question %> </h3>
-  <p><%= writing.content %> </p>
-  <% end %>
+<h1>Dashboard</h1>
+
+
+<dl class="tabs" data-tab>
+  <dd class="active"><a href="#panel2-1">Write</a></dd>
+  <dd><a href="#panel2-2">Worksheets</a></dd>
+  <dd><a href="#panel2-3">Settings</a></dd>
+</dl>
+<div class="tabs-content">
+  <div class="content active" id="panel2-1">
+    <% @user.writings.each do |writing| %>
+    <h4><%= writing.question %> </h4>
+    <p><%= writing.content %> </p>
+    <% end %>
+  </div>
+  <div class="content" id="panel2-2">
+    <h4>Thought Records</h4>
+    <% @user.worksheets.each do |worksheet| %>
+    <ul class="no-bullet">
+    <li><h5>Date</h5></li>
+    <li><%= worksheet.date %></li>
+    <li><h5>Where were you? What were you doing?</h5></li>
+    <li><%= worksheet.text_answer1 %></li>
+    <li><h5>Emotion or Feeling</h5></li>
+    <li><%= worksheet.text_answer2 %></li>
+    <li><h5>Negative automatic thought</h5></li>
+    <li><%= worksheet.text_answer3 %></li>
+    <li><h5>Evidence that supports the thought</h5></li>
+    <li><%= worksheet.text_answer4 %></li>
+    <li><h5>Evidence that does not support the thought</h5></li>
+    <li><%= worksheet.text_answer5 %></li>
+    <li><h5>Alternative thought</h5></li>
+    <li><%= worksheet.text_answer6 %></li>
+    <li><h5>New emotion or feeling</h5></li>
+    <li><%= worksheet.text_answer7 %></li>
+    ----------------------------------------------------------------
+  </ul>
+    <% end %>
+  </div>
+  <div class="content" id="panel2-3">
+    <p>Edit your <a href="/users/edit">settings</a></p>
+  </div>
 </div>

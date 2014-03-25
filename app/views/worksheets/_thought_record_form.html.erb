@@ -8,5 +8,6 @@
   <%= f.input :text_answer5, label: "Evidence that does not support the thought. What experiences indicate that this thought is not completely true all of the time? If my best friend had this thought what would I tell them?" %>
   <%= f.input :text_answer6, label: "Alternative thought. Write a new thought which takes into account the evidence for and against the original thought." %>
   <%= f.input :text_answer7, label: "How do you feel about the situation now? What emotions do you have and at what percentages?" %>
+  <%= f.hidden_field :name, :value => "thought_record" %>
   <%= f.submit "Save Worksheet", class: "button" %>
   <% end %>
