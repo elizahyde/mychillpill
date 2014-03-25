@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140324214944) do
+ActiveRecord::Schema.define(version: 20140325183049) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -49,6 +49,25 @@ ActiveRecord::Schema.define(version: 20140324214944) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+
+  create_table "worksheets", force: true do |t|
+    t.string   "name"
+    t.text     "text_answer1"
+    t.text     "text_answer2"
+    t.text     "text_answer3"
+    t.text     "text_answer4"
+    t.text     "text_answer5"
+    t.text     "text_answer6"
+    t.text     "text_answer7"
+    t.integer  "integer_answer1"
+    t.integer  "integer_answer2"
+    t.date     "date"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "worksheets", ["user_id"], name: "index_worksheets_on_user_id", using: :btree
 
   create_table "writings", force: true do |t|
     t.text     "content"

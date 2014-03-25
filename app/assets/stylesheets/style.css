@@ -13,6 +13,7 @@ h1,h2,h3,h4, button, .button {
 }
 .top-bar {
   background: #94C7C8;
+  height: 50px;
  }
 
  .top-bar-section ul {
@@ -90,7 +91,7 @@ h1,h2,h3,h4, button, .button {
  } /* end media query */
 
  textarea {
-  height: 300px;
+  height: 200px;
 }
 
 .textbox {

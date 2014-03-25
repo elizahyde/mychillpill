@@ -6,6 +6,7 @@ class WritingsController < ApplicationController
 
   def create
     @writing = Writing.new(writing_params)
+    @writing.user = current_user
 
     respond_to do |format|
       if @writing.save
@@ -31,6 +32,6 @@ class WritingsController < ApplicationController
 
   def writing_params
     # This allows content and question to be saved to writing (rails 4 change)
-    params.require(:writing).permit(:content, :question)
+    params.require(:writing).permit(:content, :question, :user_id)
   end
 end

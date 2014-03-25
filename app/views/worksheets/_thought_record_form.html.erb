@@ -1,0 +1,12 @@
+<%= simple_form_for @worksheet do |f| %>
+  <%= f.label "When was it?" %>
+  <%= f.date_field :date %>
+  <%= f.input :text_answer1, label: "Where were you? What were you doing? Who were you with?" %>
+  <%= f.input :text_answer2, label: "What emotions did you have? Rate the percentage" %>
+  <%= f.input :text_answer3, label: "Negative automatic thoughts. What thoughts were going through your mind?" %>
+  <%= f.input :text_answer4, label: "Evidence that supports the thought. What supports the truthfulness of this thought or image?" %>
+  <%= f.input :text_answer5, label: "Evidence that does not support the thought. What experiences indicate that this thought is not completely true all of the time? If my best friend had this thought what would I tell them?" %>
+  <%= f.input :text_answer6, label: "Alternative thought. Write a new thought which takes into account the evidence for and against the original thought." %>
+  <%= f.input :text_answer7, label: "How do you feel about the situation now? What emotions do you have and at what percentages?" %>
+  <%= f.submit "Save Worksheet", class: "button" %>
+  <% end %>

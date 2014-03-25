@@ -1,0 +1,7 @@
+<h1>Write</h1>
+<% @user.writings.each do |writing| %>
+<div>
+  <h3><%= writing.question %> </h3>
+  <p><%= writing.content %> </p>
+  <% end %>
+</div>

@@ -3,10 +3,11 @@
 <!-- displays prompt -->
 <h3><%= question %></h3>
 
-<%= form_for(@writing) do |f| %>
+<%= simple_form_for(@writing) do |f| %>
   <div>
-    <%= f.text_area :content, :cols => "30", :rows => "30" %>
+    <%= f.text_area :content, :cols => "30", :rows => "25" %>
   </div>
+    <%= f.hidden_field :user_id %>
   <!-- places question in hidden field in writing table -->
     <%= f.hidden_field :question, :value => question %>
   <div>

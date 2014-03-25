@@ -13,7 +13,7 @@
 //= require jquery.min
 //= require jquery_ujs
 //= require foundation.min
+//= require foundation.reveal
 //= require drawingboard.min
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
