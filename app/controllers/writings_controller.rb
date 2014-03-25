@@ -1,4 +1,5 @@
 class WritingsController < ApplicationController
+  before_action :authenticate_user!
   def index
     @writing = Writing.new
     @prompts = Prompt.where(:category => "writing")

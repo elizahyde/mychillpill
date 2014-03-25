@@ -5,7 +5,7 @@ Mychillpill::Application.routes.draw do
   get '/drawings', to: 'drawings#index'
   get '/worksheets', to: 'worksheets#index'
   get 'users/dashboard', to: 'users#dashboard'
-  root 'users#dashboard'
+  root 'application#index'
 
     resources :writings
     resources :users
