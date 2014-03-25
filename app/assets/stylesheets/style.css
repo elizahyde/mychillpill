@@ -7,13 +7,15 @@ h1,h2,h3,h4, button, .button {
   font-family: 'Karla', sans-serif;
 }
 
+.logo {
+  color: #ADD8C7;
+}
 /* This is the Logo */
-.top-bar .name h1 a {
+.top-bar .name h1 a, .logo {
   font-family: 'Fredoka One', cursive;
 }
 .top-bar {
   background: #94C7C8;
-  height: 50px;
  }
 
  .top-bar-section ul {
@@ -96,4 +98,13 @@ h1,h2,h3,h4, button, .button {
 
 .textbox {
   height: auto;
+}
+
+.tabs dd > a {
+  background: #94C7C8;
+  color: white;
+}
+
+.tabs dd.active a {
+  background: #ADD8C7;
 }
