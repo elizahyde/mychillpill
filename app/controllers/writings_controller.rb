@@ -22,15 +22,6 @@ class WritingsController < ApplicationController
     end
   end
 
-  def show
-    @writing = Writing.find(params[:id])
-
-    respond_to do |format|
-      format.html
-      format.json { render json: @writing }
-    end
-  end
-
   def writing_params
     # This allows content and question to be saved to writing (rails 4 change)
     params.require(:writing).permit(:content, :question, :user_id)

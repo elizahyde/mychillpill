@@ -4,11 +4,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
   # before_action :authenticate_user!
 
-
-  def index
-  end
-
-# The following 5 lines of code render all ajax calls with devise views to have no layout
+  # The following 5 lines of code render all ajax calls with devise views to have no layout
   layout :layout
 
   private

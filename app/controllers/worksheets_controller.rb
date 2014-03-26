@@ -21,15 +21,6 @@ class WorksheetsController < ApplicationController
     end
   end
 
-  def show
-    @worksheet = Worksheet.find(params[:id])
-
-    respond_to do |format|
-      format.html
-      format.json { render json: @worksheet }
-    end
-  end
-
   def worksheet_params
     # This allows content and question to be saved to worksheet (rails 4 change)
     params.require(:worksheet).permit(:name, :date, :text_answer1, :text_answer2, :text_answer3,
