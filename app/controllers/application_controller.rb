@@ -7,6 +7,17 @@ class ApplicationController < ActionController::Base
 
   def index
   end
+
+# The following 5 lines of code render all ajax calls with devise views to have no layout
+  layout :layout
+
+  private
+
+  def layout
+    request.xhr? && devise_controller? ? false : "application"
+  end
+
+
   before_filter :configure_permitted_parameters, if: :devise_controller?
 
     protected
