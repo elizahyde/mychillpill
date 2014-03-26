@@ -17,9 +17,9 @@
   <div class="content" id="panel2-2">
     <dl class="accordion" data-accordion>
       <dd>
-        <a href="#panel1">Accordion 1</a>
+        <a href="#panel1"></a>
         <div id="panel1" class="content active">
-          Panel 1 Content
+          Below you will find your completed worksheets
         </div>
       </dd>
       <dd>
@@ -53,7 +53,7 @@
       <dd>
         <a href="#panel3">Problem Solving</a>
         <div id="panel3" class="content">
-          <div id="panel2" class="content">
+          <div id="panel3" class="content">
             <% @user.worksheets.each do |worksheet| %>
             <% if worksheet.name == "problem_solving" %>
             <ul class="no-bullet">
@@ -75,6 +75,7 @@
           </ul>
             <% end %>
             <% end %>
+          </div>
         </div>
       </dd>
     </dl>
