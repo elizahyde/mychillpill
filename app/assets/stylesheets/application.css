@@ -10,6 +10,7 @@
  *
  *= require_self
  *= require foundation
+ *= require style
  *= require drawingboard.min
  *= require_tree .
  */
