@@ -15,5 +15,6 @@
 //= require foundation.min
 //= require drawingboard.min
 //= require_tree .
+//= require modernizr
 
 $(document).foundation();
