@@ -13,7 +13,6 @@ gem 'cancancan', '~> 1.7' # for user authorization
 group :production do
   gem 'rails_12factor'
 end
-
 group :development do
   gem 'better_errors'
   gem 'pry-rails'
@@ -22,7 +21,6 @@ group :development do
   gem 'binding_of_caller'
   gem 'shoulda-matchers'
 end
-
 group :test, :development do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
