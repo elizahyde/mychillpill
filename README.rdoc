@@ -1,6 +1,6 @@
 == MyChillPill
 
-MyChillPill is a mental health focused app. It uses art and writing to help users during stressful times or just to escape the everyday. You can find it live at [mychillpill.me](http://mychillpill.me)
+MyChillPill is a mental health focused app. It uses art and writing to help users during stressful times or just to escape the everyday. You can find it live at http://mychillpill.me
 
 This is my final project for General Assembly's Web Development Immersive Program.
 
