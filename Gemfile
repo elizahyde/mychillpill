@@ -9,7 +9,6 @@ gem 'dotenv-rails'
 gem 'devise'
 gem 'simple_form'
 gem 'cancancan', '~> 1.7' # for user authorization
-gem 'rails_12factor'
 
 group :development do
   gem 'better_errors'
