@@ -15,3 +15,5 @@
 //= require foundation.min
 //= require drawingboard.min
 //= require_tree .
+
+$(document).foundation();

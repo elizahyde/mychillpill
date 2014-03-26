@@ -79,4 +79,6 @@ Mychillpill::Application.configure do
   config.log_formatter = ::Logger::Formatter.new
 
   config.action_mailer.default_url_options = { host: 'mychillpill.me' }
+
+  config.assets.precompile += %w( vendor/modernizr.js )
 end
