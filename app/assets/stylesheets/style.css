@@ -111,6 +111,15 @@ h1,h2,h3,h4, button, .button {
   background: #ADD8C7;
 }
 
+.accordion dd > a {
+  background: #94C7C8;
+  color: white;
+}
+
+.accordion dd.active a {
+  background: #ADD8C7;
+}
+
 #indexContainer
 {
   width:380px;
