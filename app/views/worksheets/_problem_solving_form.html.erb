@@ -1,12 +1,25 @@
-<%= simple_form_for @worksheet do |f| %>
+<%= form_for(@worksheet, html: {"data-abide" => ""}) do |f| %>
   <%= f.label "When is it?" %>
   <%= f.date_field :date %>
-  <%= f.input :text_answer1, label: "What is the problem or worry?" %>
-  <%= f.input :text_answer2, label: "Brainstorm potential solutions" %>
-  <%= f.input :text_answer3, label: "Advantages of this solution?" %>
-  <%= f.input :text_answer4, label: "Disadvantages of this solution?" %>
-  <%= f.input :text_answer5, label: "Pick the best solution (or the least-worst)" %>
-  <%= f.input :text_answer6, label: "What steps do you need to take to put this solution into action?" %>
+
+  <%= f.label :text_answer1, "What is the problem or worry?" %>
+  <%= f.text_area :text_answer1, :required => "" %>
+
+  <%= f.label :text_answer2, "Brainstorm potential solutions" %>
+  <%= f.text_area :text_answer2, :required => "" %>
+
+  <%= f.label :text_answer3, "Advantages of this solution?" %>
+  <%= f.text_area :text_answer3, :required => "" %>
+
+  <%= f.label :text_answer4, "Disadvantages of this solution?" %>
+  <%= f.text_area :text_answer4, :required => "" %>
+
+  <%= f.label :text_answer5, "Pick the best solution (or the least-worst)" %>
+  <%= f.text_area :text_answer5, :required => "" %>
+
+  <%= f.label :text_answer6, "What steps do you need to take to put this solution into action?" %>
+  <%= f.text_area :text_answer6, :required => "" %>
+
   <%= f.hidden_field :name, :value => "problem_solving" %>
   <%= f.submit "Save Worksheet", class: "button" %>
   <% end %>

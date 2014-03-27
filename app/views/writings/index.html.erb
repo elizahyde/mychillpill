@@ -3,15 +3,17 @@
 <!-- displays prompt -->
 <h3><%= question %></h3>
 
-<%= simple_form_for(@writing) do |f| %>
+<%= form_for(@writing, html: {"data-abide" => ""}) do |f| %>
   <div>
-    <%= f.text_area :content, :cols => "30", :rows => "25" %>
+    <%= f.text_area :content, :cols => "30", :rows => "25", :required => "" %>
+    <small class="error">You must write in the box.</small>
   </div>
     <%= f.hidden_field :user_id %>
   <!-- places question in hidden field in writing table -->
     <%= f.hidden_field :question, :value => question %>
   <div>
     <a href ="/writings" class="button">New Prompt</a>
-    <%= f.submit "Save to Account", class: 'button' %>
+    <%= f.submit "Save to Account", class: 'button submit' %>
   </div>
 <% end %>
+
