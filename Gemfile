@@ -24,6 +24,10 @@ end
 group :test, :development do
   gem 'factory_girl_rails'
   gem 'rspec-rails'
+  gem 'database_cleaner'
+  gem 'guard-rspec'
+  gem 'guard-livereload'
+  gem 'capybara'
 end
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.2'
