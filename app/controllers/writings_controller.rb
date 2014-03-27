@@ -7,6 +7,7 @@ class WritingsController < ApplicationController
 
   def create
     @writing = Writing.new(writing_params)
+    # sets user to be current user. Protects it so a user can't make a post under a different user
     @writing.user = current_user
 
     respond_to do |format|

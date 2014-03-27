@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :authenticate_user!, except: :index
+  before_action :authenticate_user!, except: [:index, :about]
   load_and_authorize_resource # CanCanCan method checked current user and raises exception if not a match
 
   def dashboard

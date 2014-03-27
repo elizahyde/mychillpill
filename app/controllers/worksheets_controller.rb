@@ -6,6 +6,7 @@ class WorksheetsController < ApplicationController
 
   def create
     @worksheet = Worksheet.new(worksheet_params)
+    # sets user to be current user. Protects it so a user can't make a post under a different user
     @worksheet.user = current_user
 
     respond_to do |format|
@@ -22,7 +23,7 @@ class WorksheetsController < ApplicationController
   end
 
   def worksheet_params
-    # This allows content and question to be saved to worksheet (rails 4 change)
+    # This allows fields to be saved to worksheet (rails 4 change)
     params.require(:worksheet).permit(:name, :date, :text_answer1, :text_answer2, :text_answer3,
       :text_answer4, :text_answer5, :text_answer6, :text_answer7, :user_id)
   end
